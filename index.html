@@ -7,7 +7,8 @@
 
       document.querySelector('#spaceHorizontally').addEventListener('click',
         () => {
-          alert("EDIT ME")
+          var oneobject = document.getElementById('object_1');
+          oneobject.classList.toggle("spaceHorizontally")
         }
       )
 
@@ -54,7 +55,7 @@
     <div>
       <select name="objects" onchange="if (this.selectedIndex) clearCanvas(this.value)">
           <option value="-1" selected="selected">Please select object set to play with!</option>
-          <option value="objects_1">Objects #1</option>
+          <option value="objects_1" id="objects_1">Objects #1</option>
           <option value="objects_2">Objects #2</option>
           <option value="objects_3">Objects #3</option>
         </select>
