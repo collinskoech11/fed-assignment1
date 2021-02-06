@@ -69,7 +69,12 @@
     <button id="alignTop">Align top</button>
     <button id="alignMiddle">Align middle</button>
     <button id="alignBottom">Align bottom</button>
-    <canvas id="c" width="960" height="800"></canvas>
+    <canvas id="canvas" width="960" height="800"></canvas>
+    <canvas id="c" width="400" height="400" style="border:2px solid #000000"></canvas>
+    <script>
+    var canvas = new fabric.Canvas('canvas');
+    canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
+    </script>
     <script src="app.js"></script>
   <body>
 </html>
