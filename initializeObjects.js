@@ -162,6 +162,9 @@ function addObjectSet3() {
 
   canvas.renderAll()
 }
+function spaceHorizontally() {
+  this.rect
+}
 
 function createCanvas() {
   this.canvas = new fabric.Canvas('c')
